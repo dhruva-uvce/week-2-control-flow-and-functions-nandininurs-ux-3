@@ -14,3 +14,17 @@
 # Sample Output:  Grade: B
 
 # --- YOUR CODE HERE ---
+s=int(input("Enter your score : "))
+if(s>100 or s<0):
+    print("Invalid Score")
+else:
+    if(s>=90 and s<=100):
+        print("Grade: A")
+    if(s>=80 and s<90):
+        print("Grade: B")
+    if(s>=70 and s<80):
+        print("Grade: C")
+    if(s>=60 and s<70):
+        print("Grade: D")
+    if(s<60):
+        print("Grade: F")

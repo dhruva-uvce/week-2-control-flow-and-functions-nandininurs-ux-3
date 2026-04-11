@@ -30,8 +30,8 @@ def power(base, exp=2):
 if __name__ == "__main__":
     # Call the functions and print results
     # --- YOUR CODE HERE ---
-    greet("Nandini")
-    greet("Tony Stark","Hey")
+    greet('"Nandini"')
+    greet('Tony Stark","Hey')
     print(power(3))
     print(power(3,7))
     pass

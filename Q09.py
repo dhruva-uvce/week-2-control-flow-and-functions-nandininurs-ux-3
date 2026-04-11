@@ -17,15 +17,21 @@
 
 def greet(name, greeting="Hello"):
     # --- YOUR CODE HERE ---
+    return (f"{greeting}, {name}!")
     pass
 
 
 def power(base, exp=2):
     # --- YOUR CODE HERE ---
+    return base**exp
     pass
 
 
 if __name__ == "__main__":
     # Call the functions and print results
     # --- YOUR CODE HERE ---
+    greet('"Nandini"')
+    greet('Tony Stark","Hey')
+    print(power(3))
+    print(power(3,7))
     pass

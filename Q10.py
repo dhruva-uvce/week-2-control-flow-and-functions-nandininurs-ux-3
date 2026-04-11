@@ -16,15 +16,23 @@
 
 def add_element(lst, element):
     # --- YOUR CODE HERE ---
+    lst.append(element)
     pass
 
 
 def double_elements(lst):
     # --- YOUR CODE HERE ---
+    for i in range(len(lst)):
+        lst[i]=lst[i]*2
     pass
 
 
 if __name__ == "__main__":
     # Demonstrate call by reference
     # --- YOUR CODE HERE ---
+    numbers=[2,4,7,8]
+    add_element(numbers,5)
+    print(numbers)
+    double_elements(numbers)
+    print(numbers)
     pass

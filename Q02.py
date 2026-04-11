@@ -15,15 +15,14 @@
 # Sample Output 2:  1900 is not a leap year
 
 # --- YOUR CODE HERE ---
-s=int(input("Enter a year"))
-if(s%4==0):
-    if(s%100!=0):
+s = int(input("Enter a year: "))
+if s % 4 == 0:
+    if s % 100 == 0:
+        if s % 400 == 0:
+            print(f"{s} is a leap year")
+        else:
+            print(f"{s} is not a leap year")
+    else:
         print(f"{s} is a leap year")
-    else:
-        print(f"{s} is not a leap year")
-    if(s%400==0):
-        print(f'{s} is a leap year')
-    else:
-        print(f'{s} is not a leap year')
 else:
-    print(f'{s} is not a leap year')
+    print(f"{s} is not a leap year")
